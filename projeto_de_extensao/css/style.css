@@ -1,104 +1,93 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
+}*
+
+body{
     line-height: 1.6;
     background-image: linear-gradient(to top, #FFD90F, #C910E9);
     color: #333;
+    font-family: Arial, Helvetica, sans-serif
 }
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-}
-header h1 {
-    margin: 5px 0;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-header nav a {
-    color: #ffffff;
+
+
+/* Inicio Header*/
+
+
+header{
+    max-width: 8000px;
     background-color: oklab(47.735% 0.013 -0.05133 / 0.363);
-    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 25px 5%;
+}
+
+header a{
+    color: #0e2411a9;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: color 0.6s ease;
-    padding: 5px 10px;
+    display: inline-block;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: .3s;
+}
+header ul{
+    list-style-type: none;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: rgb(0, 68, 255);
+header li{
+    display: inline-block;
+    padding: 14px 40px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-main {
+/* Fim Header*/
+
+
+
+/* Inicio Main */
+main{
     padding: 30px;
     max-width: 1200px;
     margin:  auto;
     margin-bottom: 70px;
     background: #00345A;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 0 10px #00345A;
     color: #fff;
     min-height: 80vh;
 }
-main div {
+main .text_img_inicio{
     margin-bottom: 20px;
-    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    
-}
-main div figure {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-main div figure img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 5px 5px;
 }
 
-main article h2 {
+main .text_inicio{
     margin-bottom: 10px;
     text-align: center;
-    font-size: 22px;
+    font-size: 15px;
     color: #fff;
     text-transform: uppercase;
 }
+/* Fim Main */
 
-main article p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ddd;
+
+
+/*Metodologia - IN*/
+.metodologia{
     text-align: justify;
-    text-indent: 20px;
 }
 
-footer {
+
+/*Metodologia - OUT*/
+
+footer{
     background: #35424a;
     color: #ffffff;
     font-weight: bold;
