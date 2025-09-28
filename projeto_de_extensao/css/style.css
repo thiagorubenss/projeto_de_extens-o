@@ -1,3 +1,27 @@
+/* Grid Equipe */
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 32px;
+    justify-items: center;
+    align-items: start;
+    margin: 40px 0;
+}
+
+.equipe-grid .membro {
+    background: #fff;
+    color: #00345A;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
