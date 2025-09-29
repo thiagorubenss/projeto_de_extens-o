@@ -54,11 +54,12 @@ main{
     max-width: 1200px;
     margin:  auto;
     margin-bottom: 70px;
-    background: #00345A;
+    background: rgba(9, 50, 80, 0.7);
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 10px #00345A;
     color: #fff;
     min-height: 80vh;
+    
 }
 main .text_img_inicio{
     margin-bottom: 20px;
@@ -98,6 +99,46 @@ footer{
 }
 
 /* Equipe */
+
+.text_equipe h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;  
+}
+
+.text_equipe {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}   
+
+.text_equipe img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+article p {
+    text-align: justify;
+    color: #2d3557;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 18px 22px;
+    box-shadow: 0 2px 10px rgba(80,80,160,0.07);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 2px solid #fff;
+  
+}
+
 .equipe-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
