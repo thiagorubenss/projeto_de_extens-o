@@ -98,6 +98,121 @@ footer{
     
 }
 
+/* Resultados - Página de Resultados */
+.resultados-resumo {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin: 32px auto 24px auto;
+    max-width: 700px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.07);
+    text-align: center;
+    color: #000;
+}
+.resultados-resumo h2 {
+    color: #C910E9;
+    margin-bottom: 12px;
+}
+.resultados-resumo ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin-top: 18px;
+    padding: 0;
+    font-weight: bold;
+    color: #00345A;
+}
+
+.resultados-indicadores {
+    margin: 32px auto;
+    max-width: 700px;
+    text-align: center;
+}
+.indicadores-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 18px;
+}
+.indicador {
+    background: #FFDC80;
+    border-radius: 12px;
+    padding: 18px 28px;
+    box-shadow: 0 2px 8px rgba(200, 144, 233, 0.10);
+}
+.indicador .valor {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #C910E9;
+    display: block;
+}
+.indicador .descricao {
+    color: #00345A;
+    font-size: 1rem;
+    margin-top: 6px;
+}
+
+.resultados-depoimentos {
+    background: rgba(181, 126, 220, 0.10);
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin: 32px auto;
+    max-width: 700px;
+    text-align: center;
+}
+.resultados-depoimentos h2 {
+    color: #7c3aed;
+    margin-bottom: 16px;
+}
+.resultados-depoimentos blockquote {
+    font-style: italic;
+    color: #2d3557;
+    background: rgba(255,255,255,0.7);
+    border-left: 4px solid #C910E9;
+    margin: 18px auto;
+    padding: 16px 24px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+.resultados-depoimentos span {
+    display: block;
+    margin-top: 8px;
+    color: #00345A;
+    font-size: 0.98rem;
+}
+
+.resultados-galeria {
+    margin: 32px auto 48px auto;
+    max-width: 900px;
+    text-align: center;
+}
+.resultados-galeria h2 {
+    color: #FFD90F;
+    margin-bottom: 18px;
+}
+.galeria-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galeria-grid img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(80,80,160,0.10);
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.galeria-grid img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 24px rgba(80,80,160,0.18);
+}
+
+/* Fim Resultados - Página de Resultados */
+
 /* Equipe */
 
 .text_equipe h2 {
