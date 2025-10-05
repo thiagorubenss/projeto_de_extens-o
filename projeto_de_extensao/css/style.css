@@ -21,17 +21,21 @@ header{
     color: white;
     text-align: center;
     padding: 25px 5%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px #00345A;
 }
+
 
 header a{
     color: #0e2411a9;
     text-decoration: none;
     display: inline-block;
+    padding: 10px;
 }
 header a:hover{
     color: #fff;
-    transform: scale(1.05);
-    transition: .3s;
+    background-color: #6b0c7c;
+    border-radius: 10px;
 }
 header ul{
     list-style-type: none;
@@ -44,7 +48,7 @@ header li{
     font-size: 20px;
 }
 
-/* Fim Header*/
+/*Fim Header*/
 
 
 
@@ -54,12 +58,12 @@ main{
     max-width: 1200px;
     margin:  auto;
     margin-bottom: 70px;
-    background: rgba(9, 50, 80, 0.7);
+    background: none;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 10px #00345A;
+    background: rgb(0, 52, 90, 0.3);
     color: #fff;
     min-height: 80vh;
-    
+        
 }
 main .text_img_inicio{
     margin-bottom: 20px;
@@ -78,16 +82,7 @@ main .text_inicio{
 }
 /* Fim Main */
 
-
-
-/*Metodologia - IN*/
-.metodologia{
-    text-align: justify;
-}
-
-
-/*Metodologia - OUT*/
-
+/* Inicio Footer */
 footer{
     background: #35424a;
     color: #ffffff;
@@ -96,6 +91,107 @@ footer{
     padding: 10px;
    
     
+}
+
+/* Fim Footer */
+
+/* Inicio - Página Sobre */
+.sobre-apresentacao, .sobre-historia, .sobre-valores, .sobre-equipe, .sobre-impacto, .sobre-metodologia, .sobre-parceiros, .sobre-contato {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.07);
+    padding: 28px 32px;
+    margin: 32px auto 24px auto;
+    max-width: 700px;
+    color: #2d3557
+}
+section h2 {
+    color: #6b0c7c;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+.sobre-valores ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    margin-top: 18px;
+    padding: 0;
+    font-weight: bold;
+    color: #00345A;
+    justify-content: center;
+}
+.sobre-valores ul li {
+    background: #FFDC80;
+    border-radius: 10px;
+    padding: 8px 18px;
+    box-shadow: 0 1px 6px rgba(200, 144, 233, 0.10);
+}
+.sobre-equipe a, .sobre-metodologia a, .sobre-contato a {
+    color: #7c3aed;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.sobre-equipe a:hover, .sobre-metodologia a:hover, .sobre-contato a:hover {
+    color: #C910E9;
+}
+.sobre-parceiros em {
+    color: #2d3557;
+    font-style: italic;
+}
+
+/* Fim - Página Sobre */
+
+/* Metodologia - Página Metodologia */  
+.metodologia-page {
+    padding: 32px 0;
+    color: #2d3557;
+}
+.metodologia-intro {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.07);
+    padding: 28px 32px;
+    margin: 32px auto 24px auto;
+    max-width: 700px;
+    text-align: center;
+}
+.metodologia-intro h1 {
+    color: #C910E9;
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+.metodologia-texto {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.07);
+    padding: 28px 32px;
+    margin: 32px auto 24px auto;
+    max-width: 700px;
+}
+.metodologia-texto h3 {
+    color: #7c3aed;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+.metodologia-texto p {
+    text-align: justify;
+    font-size: 1.08rem;
+    color: #2d3557;
+    margin: 12px 0;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    background: rgba(255,255,255,0.65);
+    border-radius: 8px;
+    padding: 10px 16px;
+    box-shadow: 0 1px 6px rgba(200, 144, 233, 0.07);
 }
 
 /* Resultados - Página de Resultados */
@@ -161,8 +257,8 @@ footer{
     max-width: 700px;
     text-align: center;
 }
-.resultados-depoimentos h2 {
-    color: #7c3aed;
+.resultados-depoimentos h2, .resultados-indicadores h2 {
+    color: #ffffff;
     margin-bottom: 16px;
 }
 .resultados-depoimentos blockquote {
@@ -187,10 +283,7 @@ footer{
     max-width: 900px;
     text-align: center;
 }
-.resultados-galeria h2 {
-    color: #FFD90F;
-    margin-bottom: 18px;
-}
+    
 .galeria-grid {
     display: flex;
     gap: 24px;
@@ -211,148 +304,153 @@ footer{
     box-shadow: 0 6px 24px rgba(80,80,160,0.18);
 }
 
-/* Fim Resultados - Página de Resultados */
+/*Fim Resultados - Página de Resultados */
 
-/* Equipe */
 
-.text_equipe h2 {
-    text-align: center;
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 20px;
-    text-transform: uppercase;  
+/* Inicio - Página Equipe */
+.membro {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255,255,255,0.92);
+    border-left: 6px solid #C910E9;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.10);
+    padding: 32px 28px 24px 32px;
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-style: italic;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+    gap: 24px;
 }
-
+.membro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0;
+    display: block;
+    margin-left: 0;
+    box-shadow: 0 2px 8px rgba(80,80,160,0.10);
+    flex-shrink: 0;
+}
+.info-membro {
+    flex: 1;
+    text-align: left;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: none;
+}
 .text_equipe {
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.10);
+    padding: 32px 28px 24px 28px;
+    max-width: 700px;
+    margin: 40px auto 32px auto;
     text-align: center;
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 20px;
-}   
-
+    color: #2d3557;
+}
+.text_equipe h2 {
+    color: #C910E9;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
 .text_equipe img {
     width: 100%;
-    max-width: 400px;
+    max-width: 340px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 18px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(80,80,160,0.10);
 }
-
-article p {
+.text_equipe article p {
     text-align: justify;
     color: #2d3557;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255,255,255,0.75);
     border-radius: 10px;
     padding: 18px 22px;
     box-shadow: 0 2px 10px rgba(80,80,160,0.07);
     line-height: 1.7;
     letter-spacing: 0.01em;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 50px;
+    width: 90%;
+    margin: 18px auto 0 auto;
     border: 2px solid #fff;
-  
 }
-
 .equipe-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
-    justify-items: center;
-    align-items: start;
+    justify-content: center;
+    align-items: stretch;
     margin: 40px 0;
 }
 
-.equipe-grid .membro {
-    
-    color: #00345A;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 24px 16px;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
-.membro1 {
-    background: #FF6347;
-}
-
-.membro2 {
-    background: #00BFFF;
-}
-
-.membro3 {
-    background: #32CD32;
-}
-
-.membro4 {
-    background: #FF69B4;
-}
-
-.membro5 {
-    background: #FFFF66;
-}
-
-.membro6 {
-    background: #B57EDC;
-}
-
-.membro7 {
-    background: #FF6347;
-}
-
-.membro8 {
-    background: #40E0D0;
-}
-
-.membro9 {
-    background: #7FFFD4;
-}
-
-.membro10 {
-    background: #FFD700;
-}
-
-.membro img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 16px;
-    display: block;
-    margin: auto;
-}
-
-.membro:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-}
-
-h2, p {
-    text-align: center;}  
-
-li {
-    font-style: italic;
-}
-
-.membro ul {    
-    text-align: left;
-    margin: 0 auto;
-    max-width: 220px;
-    list-style-type: none;
-}
-
-.info-membro {
-    background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+.membro {
+    background: rgba(255,255,255,0.92);
+    border-left: 6px solid #C910E9;
     border-radius: 18px;
-    box-shadow: 0 4px 18px 0 rgba(80, 80, 160, 0.10);
-    padding: 20px 24px;
-    margin: 16px auto;
-    max-width: 320px;
-    border: 1.5px solid #e0e7ff;
+    box-shadow: 0 2px 12px rgba(80,80,160,0.10);
+    padding: 32px 28px 24px 32px;
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-style: italic;
+    position: relative;
     transition: box-shadow 0.2s, transform 0.2s;
 }
+.membro:hover {
+    box-shadow: 0 6px 24px rgba(80,80,160,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.membro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    display: block;
+    margin-left: 0;
+    box-shadow: 0 2px 8px rgba(80,80,160,0.10);
+}
+.info-membro {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: none;
+    text-align: left;
+}
+.membro h2 {
+    color: #C910E9;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-style: normal;
+}
+.membro p {
+    color: #00345A;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+.membro ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+    font-size: 0.98rem;
+    color: #2d3557;
+    font-style: italic;
+    list-style: disc inside;
+}
+
+/* Fim - Página Equipe */
