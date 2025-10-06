@@ -327,6 +327,7 @@ section h2 {
     transition: box-shadow 0.2s, transform 0.2s;
     gap: 24px;
 }
+
 .membro img {
     width: 80px;
     height: 80px;
@@ -338,8 +339,8 @@ section h2 {
     box-shadow: 0 2px 8px rgba(80,80,160,0.10);
     flex-shrink: 0;
 }
+
 .info-membro {
-    flex: 1;
     text-align: left;
     background: none;
     border-radius: 0;
@@ -349,6 +350,7 @@ section h2 {
     border: none;
     transition: none;
 }
+
 .text_equipe {
     background: rgba(255,255,255,0.92);
     border-radius: 18px;
@@ -397,43 +399,13 @@ section h2 {
     margin: 40px 0;
 }
 
-.membro {
-    background: rgba(255,255,255,0.92);
-    border-left: 6px solid #C910E9;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(80,80,160,0.10);
-    padding: 32px 28px 24px 32px;
-    max-width: 420px;
-    width: 100%;
-    margin-bottom: 12px;
-    font-style: italic;
-    position: relative;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
+
 .membro:hover {
     box-shadow: 0 6px 24px rgba(80,80,160,0.18);
-    transform: translateY(-4px) scale(1.03);
+    transform: translateY(-4px);
 }
-.membro img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 18px;
-    display: block;
-    margin-left: 0;
-    box-shadow: 0 2px 8px rgba(80,80,160,0.10);
-}
-.info-membro {
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-    transition: none;
-    text-align: left;
-}
+
+
 
 .info-membro blockquote {
      
