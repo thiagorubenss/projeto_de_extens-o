@@ -17,7 +17,7 @@ body{
 
 header{
     max-width: 8000px;
-    background-color: oklab(47.735% 0.013 -0.05133 / 0.363);
+    background-color: rgba(143,0,255, 0.23);
     color: white;
     text-align: center;
     padding: 25px 5%;
@@ -27,14 +27,17 @@ header{
 
 
 header a{
-    color: #0e2411a9;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 10px;
+    background-color: #6b0c7c ;
+    border-radius: 10px;
+
 }
 header a:hover{
-    color: #fff;
-    background-color: #6b0c7c;
+    color: #6b0c7c;
+    background-color:#f19fff;
     border-radius: 10px;
 }
 header ul{
@@ -431,6 +434,25 @@ section h2 {
     transition: none;
     text-align: left;
 }
+
+.info-membro blockquote {
+     
+            font-style: italic;
+            color: #6b0c7c;
+            border-left: 4px solid #c910c9;
+            margin: 10px 0;
+            padding-left: 10px;
+        
+}
+
+.info-membro blockquote span {
+    display: block;
+    margin-top: 8px;
+    color: #00345A; 
+    font-size: auto;
+    font-weight: bold;
+}
+
 .membro h2 {
     color: #C910E9;
     font-size: 1.15rem;
