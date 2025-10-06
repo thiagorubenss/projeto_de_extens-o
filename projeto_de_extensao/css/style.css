@@ -448,3 +448,65 @@ section h2 {
 }
 
 /* Fim - Página Equipe */
+
+/* Inicio - Página Contato */
+
+    .contato {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #dfd1ebb4;
+    padding: 32px 44px;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(107,12,124,0.08);
+    border: 2px solid #6b0c7c;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #6b0c7c;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contato label {
+    font-weight: 500;
+    color: #2d3557;
+    margin-bottom: 4px;
+}
+
+.contato input,
+.contato textarea {
+    padding: 12px;
+    border: 1.5px solid #bfa2d6;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f4eafd;
+    color: #2d3557;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contato button {
+    background: linear-gradient(90deg, #6b0c7c 60%, #2980b9 100%);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    
+    }
+
+.contato button:hover {
+    background: linear-gradient(90deg, #2980b9 0%, #6b0c7c 100%);
+    box-shadow: 0 4px 16px rgba(41,128,185,0.12);
+}
+
+/* Fim - Página Contato */
