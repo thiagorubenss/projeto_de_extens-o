@@ -1,93 +1,266 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*
-
-body{
+}
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-image: linear-gradient(to top, #FFD90F, #C910E9);
     color: #333;
-    font-family: Arial, Helvetica, sans-serif
 }
-
-
-/* Inicio Header*/
-
-
-header{
-    max-width: 8000px;
-    background-color: oklab(47.735% 0.013 -0.05133 / 0.363);
-    color: white;
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    padding: 25px 5%;
 }
-
-header a{
-    color: #0e2411a9;
+header h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header nav a {
+    color: #ffffff;
+    background-color: oklab(47.735% 0.013 -0.05133 / 0.363);
+    border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
-}
-header a:hover{
-    color: #fff;
-    transform: scale(1.05);
-    transition: .3s;
-}
-header ul{
-    list-style-type: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.6s ease;
+    padding: 5px 10px;
 }
 
-header li{
-    display: inline-block;
-    padding: 14px 40px;
-    font-weight: bold;
-    font-size: 17px;
+header nav a:hover {
+    text-decoration: underline;
+    color: rgb(0, 68, 255);
 }
 
-/* Fim Header*/
-
-
-
-/* Inicio Main */
-main{
+main {
     padding: 30px;
     max-width: 1200px;
     margin:  auto;
     margin-bottom: 70px;
     background: #00345A;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 8px 8px;
     box-shadow: 0 0 10px #00345A;
     color: #fff;
     min-height: 80vh;
 }
-main .text_img_inicio{
+main div {
     margin-bottom: 20px;
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+main div figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+main div figure img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px 5px;
 }
 
-main .text_inicio{
+
+main article h2 {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 22px;
     color: #fff;
     text-transform: uppercase;
 }
-/* Fim Main */
 
-
-
-/*Metodologia - IN*/
-.metodologia{
+main article p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
     text-align: justify;
+    text-indent: 20px;
 }
 
 
-/*Metodologia - OUT*/
+/* ===== Seção ===== */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-footer{
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* ===== Container ===== */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Card ===== */
+.team-card {
+  background-color: #00345A;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Foto ===== */
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4c6ef5;
+  margin-bottom: 15px;
+}
+
+/* ===== Texto ===== */
+.team-name {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* ===== Ícones sociais ===== */
+.team-social a {
+  color: #4c6ef5;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.team-social a:hover {
+  color: #2b50c5;
+}
+
+
+main fieldset {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #004080;
+    color: #fff;
+}
+form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+fieldset {
+  border: 2px solid #00b4d8;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+/* ======= INPUTS ======= */
+label {
+  display: block;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #00b4d8;
+}
+
+/* ======= BUTTONS ======= */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00b4d8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #0096c7;
+  transform: scale(1.03);
+}
+
+button[type="reset"] {
+  background: #e63946;
+  margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+  background: #d62828;
+}
+
+
+footer {
     background: #35424a;
     color: #ffffff;
     font-weight: bold;
